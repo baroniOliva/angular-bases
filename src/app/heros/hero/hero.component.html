@@ -1,0 +1,28 @@
+<H2>JesuCristo</H2>
+
+<dl>
+  <td>Nombre</td>
+  <dd>{{name}}</dd>
+  <td>Edad</td>
+  <dd>{{age}}</dd>
+  <td>Metodo</td>
+  <dd>Dios es Bueno</dd>
+  <td>{{capitalizeName}}</td>
+  <dd> Descripcion de: </dd>
+  <td>{{Descripcion()}}</td>
+
+</dl>
+
+<button *ngIf="name !== 'Spiderman'"
+class="btn btn-primary mx-2"
+(click)="changeHero()">
+  Poner Mayuscula
+</button>
+<button *ngIf="age !== 18"
+ class="btn btn-primary" (click)="changeAge()">
+  Cambiar Edad
+</button>
+<button
+ class="btn btn-primary mx-2" (click)="Reset()">
+  Reset
+</button>
